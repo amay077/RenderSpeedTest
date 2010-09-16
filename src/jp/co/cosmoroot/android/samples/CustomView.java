@@ -86,7 +86,7 @@ public class CustomView extends View {
 	public boolean onTouchEvent(MotionEvent event) {
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
-			count = count * 2;
+			count = count + 1000;
 			invalidate();
 			break;
 
